@@ -25,11 +25,7 @@ Frida consists of two parts:
 1. **frida-tools** → installed on your computer  
 2. **frida-server** → runs on Android device  
 
-#### **To Check Device Architecture**
-Connect your device and run this command in adb shell
-```
-getprop ro.product.cpu.abi
-```
+
 #### **Install Frida tools on Kali/Linux/macOS**
 ```
 pip install frida-tools
@@ -50,11 +46,14 @@ frida --version
    - arm  
    - arm64  
    - x86  
-   - x86_64  
-To check device Architecture, run this command:  
+   - x86_64
+   - 
+#### **To Check Device Architecture**
+Connect your device and run this command in adb shell
 ```
-adb shell getprop ro.product.cpu.abi
+getprop ro.product.cpu.abi
 ```
+
 Example filename:  
 ```
 frida-server-16.1.3-android-arm64.xz
