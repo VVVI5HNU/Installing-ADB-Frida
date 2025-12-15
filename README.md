@@ -51,7 +51,10 @@ frida --version
    - arm64  
    - x86  
    - x86_64  
-
+To check device Architecture, run this command:  
+```
+adb shell getprop ro.product.cpu.abi
+```
 Example filename:  
 ```
 frida-server-16.1.3-android-arm64.xz
